@@ -16,14 +16,14 @@ class PumukitOAuth2Extension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('pumukit_oauth2', $config);
-        $container->setParameter('pumukit_oauth2.enable', $config['enable']);
-        $container->setParameter('pumukit_oauth2.clientId', $config['clientId']);
-        $container->setParameter('pumukit_oauth2.clientSecret', $config['clientSecret']);
-        $container->setParameter('pumukit_oauth2.redirectUri', $config['redirectUri']);
-        $container->setParameter('pumukit_oauth2.urlAuthorize', $config['urlAuthorize']);
-        $container->setParameter('pumukit_oauth2.urlAccessToken', $config['urlAccessToken']);
-        $container->setParameter('pumukit_oauth2.urlResourceOwnerDetails', $config['urlResourceOwnerDetails']);
+        $container->setParameter('pumukit_o_auth2', $config);
+        $container->setParameter('pumukit_o_auth2.enable', $config['enable']);
+        $container->setParameter('pumukit_o_auth2.clientId', $config['clientId']);
+        $container->setParameter('pumukit_o_auth2.clientSecret', $config['clientSecret']);
+        $container->setParameter('pumukit_o_auth2.redirectUri', $config['redirectUri']);
+        $container->setParameter('pumukit_o_auth2.urlAuthorize', $config['urlAuthorize']);
+        $container->setParameter('pumukit_o_auth2.urlAccessToken', $config['urlAccessToken']);
+        $container->setParameter('pumukit_o_auth2.urlResourceOwnerDetails', $config['urlResourceOwnerDetails']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
     }

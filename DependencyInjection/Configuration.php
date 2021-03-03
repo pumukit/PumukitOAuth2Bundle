@@ -12,7 +12,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('pumukit_oauth2');
+        $rootNode = $treeBuilder->root('pumukit_o_auth2');
 
         $rootNode
             ->children()
