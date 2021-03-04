@@ -7,7 +7,7 @@
     "symfony",
     "teltek"
   ],
-  "homepage": "https://github.com/teltek/oauth2-oracle-access-manager",
+  "homepage": "https://github.com/pumukit/PumukitOAuth2Bundle",
   "license": "proprietary",
   "authors": [
     {
@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": ">=7.2",
-    "league/oauth2-client": "^2.6"
+    "league/oauth2-client": "2.2.1"
   },
   "autoload": {
     "psr-4": {

@@ -25,7 +25,8 @@ class Oam extends BaseGenericProvider
         ];
 
         if ($this->getAccessTokenMethod() === self::METHOD_POST) {
-            $options['body'] = $this->getAccessTokenQuery($params);
+//            $options['body'] = $this->getAccessTokenQuery($params);
+            $options['body'] = $this->getAccessTokenBody($params);
         }
 
         return $options;
