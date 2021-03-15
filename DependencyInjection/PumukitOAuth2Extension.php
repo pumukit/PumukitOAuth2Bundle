@@ -18,6 +18,7 @@ class PumukitOAuth2Extension extends Extension
 
         $container->setParameter('pumukit_o_auth2', $config);
         $container->setParameter('pumukit_o_auth2.enable', $config['enable']);
+        $container->setParameter('pumukit_o_auth2.logout_url', $config['logout_url']);
         $container->setParameter('pumukit_o_auth2.clientId', $config['clientId']);
         $container->setParameter('pumukit_o_auth2.clientSecret', $config['clientSecret']);
         $container->setParameter('pumukit_o_auth2.redirectUri', $config['redirectUri']);
