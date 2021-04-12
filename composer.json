@@ -17,6 +17,7 @@
   ],
   "require": {
     "php": ">=7.2",
+    "pumukit/pumukit": ">=3.6",
     "league/oauth2-client": "2.2.1"
   },
   "autoload": {
