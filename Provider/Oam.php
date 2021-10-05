@@ -19,12 +19,12 @@ class Oam extends BaseGenericProvider
     protected function getAccessTokenOptions(array $params): array
     {
         $options = ['headers' => [
-              'content-type' => 'application/x-www-form-urlencoded',
-              'Authorization' => 'Basic '.base64_encode($params['client_id'].':'.$params['client_secret']),
-            ],
+            'content-type' => 'application/x-www-form-urlencoded',
+            'Authorization' => 'Basic '.base64_encode($params['client_id'].':'.$params['client_secret']),
+        ],
         ];
 
-        if ($this->getAccessTokenMethod() === self::METHOD_POST) {
+        if (self::METHOD_POST === $this->getAccessTokenMethod()) {
 //            $options['body'] = $this->getAccessTokenQuery($params);
             $options['body'] = $this->getAccessTokenBody($params);
         }
