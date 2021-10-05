@@ -10,6 +10,20 @@ To install, use composer:
 composer require teltek/pumukit-oauth2-bundle
 ```
 
+if not, add this to config/bundles.php
+
+```
+Pumukit\TemplateBundle\PumukitTemplateBundle::class => ['all' => true]
+```
+
+Then execute the following commands
+
+```bash
+php bin/console cache:clear
+php bin/console cache:clear --env=prod
+php bin/console assets:install
+```
+
 ## Usage
 
 Usage is the same as The League's OAuth client, using `Pumukit\OAuth2Bundle\Provider\Oam` as the provider.
