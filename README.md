@@ -13,7 +13,7 @@ composer require teltek/pumukit-oauth2-bundle
 if not, add this to config/bundles.php
 
 ```
-Pumukit\TemplateBundle\PumukitTemplateBundle::class => ['all' => true]
+Pumukit\OAuth2Bundle\PumukitOAuth2Bundle::class => ['all' => true]
 ```
 
 Then execute the following commands
